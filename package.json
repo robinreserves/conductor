@@ -1,0 +1,31 @@
+{
+  "name": "conductor",
+  "version": "1.0.0",
+  "description": "Simple orchestration and monitoring for 12-factor apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinreserves/conductor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robinreserves/conductor/issues"
+  },
+  "homepage": "https://github.com/robinreserves/conductor#readme",
+  "dependencies": {
+    "dockerode": "^2.4.3",
+    "isomorphic-unfetch": "^1.0.0",
+    "lodash": "^4.17.4",
+    "moment": "2.18.1",
+    "next": "^2.4.3",
+    "office-ui-fabric-react": "^4.4.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}

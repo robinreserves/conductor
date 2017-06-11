@@ -1,0 +1,32 @@
+# paths are relative to this config's folder
+communicator:
+  env: ./communicator/.env
+  exec:
+    - type: docker
+      image: robin-communicator:0.7.0
+      expose:
+        - 1339:1339
+    - type: shell
+      command: yarn start
+      workdir: ./communicator
+    - type: shell
+      command: yarn start:prod
+      workdir: ./communicator
+
+monolith:
+  env: ./monolith/.env
+  exec:
+    - type: docker
+      image: monolith:1.7.2
+      expose:
+        - 4567:4567
+    - type: shell
+      command: gradle run
+      workdir: ./monolith
+
+mailhog:
+  exec:
+    - type: docker
+      image: mailhog/mailhog:latest
+      expose:
+        - 1025:1025
