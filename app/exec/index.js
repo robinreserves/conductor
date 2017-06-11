@@ -21,7 +21,7 @@ import shell from './shell';
         - 1339:1339
 
   Your executor function will be called with these arguments:
-  
+
     executor({
       "image": "robin-communicator:0.7.0",
       "expose": [ "1339:1339" ],

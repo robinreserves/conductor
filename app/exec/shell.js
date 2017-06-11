@@ -27,7 +27,7 @@ export default ({ command, workdir }, { getEnvironment, resolvePath, getStdout, 
   const stop = () => {
     if (subprocess) {
       subprocess.kill('SIGTERM'); // allows graceful shutdown
-    } 
+    }
     return Promise.resolve();
   };
 

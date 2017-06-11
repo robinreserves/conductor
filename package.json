@@ -20,13 +20,16 @@
   "homepage": "https://github.com/robinreserves/conductor#readme",
   "dependencies": {
     "dockerode": "^2.4.3",
+    "env-file-parser": "^1.0.0",
     "isomorphic-unfetch": "^1.0.0",
     "lodash": "^4.17.4",
     "moment": "2.18.1",
     "next": "^2.4.3",
     "office-ui-fabric-react": "^4.4.2",
+    "opn": "^5.1.0",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "yamljs": "^0.2.10"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
