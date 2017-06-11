@@ -1,11 +1,12 @@
+import React from 'react';
 import Header from '../components/Header';
-import ServiceList from '../components/Services';
-import { loadConfig } from '../app/config';
+import ServiceList from '../components/ServiceList';
+import { getConfig } from '../app/config';
 
-const Index = ({ config }) => (
+const Index = () => (
   <div>
     <Header />
-    <ServiceList config={config} />
+    <ServiceList />
     <p>Hello Next.js</p>
   </div>
 );

@@ -10,7 +10,6 @@ import shell from './shell';
     - exitCode: () => int
     - stop: () => undefined | Promise
     - start: () => undefined | Promise
-    - restart: () => undefined | Promise
 
   All YAML properties other than "type" are passed as props;
   e.g. if you have the following in your `exec` section:

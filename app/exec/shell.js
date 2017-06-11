@@ -37,6 +37,5 @@ export default ({ command, workdir }, { getEnvironment, resolvePath, getStdout, 
     startedAt: () => startedAt,
     start,
     stop,
-    restart: () => stop().then(start),
   };
 };
