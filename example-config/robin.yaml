@@ -1,6 +1,6 @@
 # paths are relative to this config's folder
 communicator:
-  env: ./communicator/.env
+  env: ../../communicator/.env
   exec:
     - type: docker
       image: robin-communicator:0.7.0
@@ -14,7 +14,7 @@ communicator:
       workdir: ./communicator
 
 monolith:
-  env: ./monolith/.env
+  env: ../../monolith/.env
   exec:
     - type: docker
       image: monolith:1.7.2
