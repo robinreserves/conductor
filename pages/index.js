@@ -1,20 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { withRedux } from 'next-redux-wrapper';
+import { getInitialProps, makeStore } from '../app/initial-state';
+
 import Header from '../components/Header';
 import ServiceList from '../components/ServiceList';
-import { getConfig } from '../app/config';
 
-const Index = () => (
-  <div>
-    <Header />
-    <ServiceList />
-    <p>Hello Next.js</p>
-  </div>
-);
+class Index extends Component {
+  static getInitialProps(props) {
+    return getInitialProps(props);
+  }
 
-// TODO change this into next-redux-wrapper
-Index.getInitialProps = async () => {
-  const config = getConfig();
-  return { config };
-};
+  render() {
+    return (
+      <div>
+        <Header />
+        <ServiceList />
+        <p>Hello Next.js</p>
+      </div>
+    );
+  }
+}
 
-export default Index;
+export default withRedux(makeStore)(Index);

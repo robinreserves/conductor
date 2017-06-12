@@ -56,7 +56,7 @@ class Service {
 }
 
 // singleton configuration
-// Services are the 
+// Services are the backend state ("implementation").
 let services = null;
 
 const createServices = config =>
