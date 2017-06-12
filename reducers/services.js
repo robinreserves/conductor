@@ -2,6 +2,9 @@ const INITIAL_STATE = {};
 
 export default function services(state = INITIAL_STATE, action) {
   switch (action.type) {
+    case 'load': /* { initialState } */
+      return action.initialState;
+
     case 'start': /* { name, startedAt } */
       return {
         ...state,
