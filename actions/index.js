@@ -1,6 +1,5 @@
-import ;
+import * as services from './services';
 
 module.exports = {
-  loadServices,
-  
+  ...services,
 };

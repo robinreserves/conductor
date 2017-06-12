@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRedux } from 'next-redux-wrapper';
+import withRedux from 'next-redux-wrapper';
 import { getInitialProps, makeStore } from '../app/initial-state';
 
 import Header from '../components/Header';
